@@ -1,0 +1,21 @@
+While Using Tokens, the developer needs to configure so as to send the Tokens
+with each and every time the Browser makes a request on behalf of the user 
+
+TO avoid this, we can use cookies to store this data on our browser so that 
+the browser automatically sends this token/identifier every time that particular 
+user makes a request to our server
+
+Cookies are of 2 types- Stateful and Stateless. 
+1. Stateful Cookies are those that a server sends back to a browser and browser
+    with a session identifier that the browser uses to make requests to the server
+    and in turn finds some data from a database.
+2. Stateless Cookies are on the other hand less load on our server
+
+Express-Session middleware is a Server Side Session
+Cookie-Session middleware is a Client Side Session
+
+Serializing means to Serialize the User Data that comes from Google Login or Login
+and make it available to the browser as Cookies
+ 
+Deserializing means to Deserialize the User Data and from the Browser Cookies and make it to some value
+available to Express
